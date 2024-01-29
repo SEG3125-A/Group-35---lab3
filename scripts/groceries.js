@@ -9,6 +9,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "produce",
 		price: 1.99
 	},
 	{
@@ -18,6 +19,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "produce",
 		price: 2.99
 	},{
 		name: "Celery",
@@ -26,6 +28,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "produce",
 		price: 2.20
 	},
 	{
@@ -35,6 +38,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "produce",
 		price: 2.20
 	},
 	{
@@ -44,6 +48,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "produce",
 		price: 1.25
 	},
 	{
@@ -53,6 +58,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "produce",
 		price: 2.25
 	},
 	{
@@ -62,6 +68,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "produce",
 		price: 0.75
 	},
 	{
@@ -71,6 +78,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "produce",
 		price: 2.25
 	},
 	{
@@ -80,6 +88,7 @@ var products = [
 		glutenFree: false,
 		lactosefree: true,
 		organic: false,
+		type: "protein",
 		price: 2.99
 	},
 	{
@@ -89,6 +98,7 @@ var products = [
 		glutenFree: false,
 		lactosefree: true,
 		organic: false,
+		type: "grain",
 		price: 2.35
 	},
 	{
@@ -98,6 +108,7 @@ var products = [
 		glutenFree: false,
 		lactosefree: false,
 		organic: false,
+		type: "grain",
 		price: 3.50
 	},
 	{
@@ -107,6 +118,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: false,
 		organic: false,
+		type: "dairy",
 		price: 3.10
 	},
 	{
@@ -116,6 +128,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: false,
 		organic: false,
+		type: "dairy",
 		price: 3.50
 	},
 	{
@@ -125,6 +138,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "protein",
 		price: 5.99
 	},
 	{
@@ -134,6 +148,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "protein",
 		price: 6.99
 	},
 	{
@@ -143,6 +158,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "protein",
 		price: 4.99
 	},
 	{
@@ -152,6 +168,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "protein",
 		price: 5.99
 	},
 	{
@@ -161,6 +178,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "protein",
 		price: 6.50
 	},
 	{
@@ -170,7 +188,9 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "protein",
 		price: 7.50
+		
 	},
 	{
 		name: "Salmon",
@@ -179,6 +199,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "protein",
 		price: 10.00
 	},
 	{
@@ -188,6 +209,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
+		type: "protein",
 		price: 11.00
 	},
 	{
@@ -197,6 +219,7 @@ var products = [
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
+		type: "other",
 		price: 2.40
 	},
 	{
@@ -206,6 +229,7 @@ var products = [
 		glutenFree: false,
 		lactosefree: false,
 		organic: false,
+		type: "other",
 		price: 7.75
 	},
 	{
@@ -215,6 +239,7 @@ var products = [
 		glutenFree: false,
 		lactosefree: false,
 		organic: false,
+		type: "other",
 		price: 8.00
 	}
 	
