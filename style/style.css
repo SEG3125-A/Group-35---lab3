@@ -1,0 +1,226 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  padding: 14px 16px;
+  transition: 0.3s;
+  background-color: black;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#157753;
+}
+
+#addCart {
+  margin: 30px 0px 0px 0px;
+  padding: 10px 20px;
+  background-color:#04AA6D;
+  font-family: calibri;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Change background color of buttons on hover */
+#addCart:hover {
+  background-color:#2f604e;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color:#04AA6D;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri;
+    /* background-color: #f4f4f4; */   
+    background-image: url(wallpaper1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+
+}
+
+/* Code for X inspired by https://www.w3schools.com/css/css_navbar.asp  */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* logo styling */
+  #logo{
+    float: left;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  #logo a:hover{
+    background-color: #333;
+  }
+
+  #logo a{
+    color:#45d4a0;
+  }
+
+  /* end of navbar's CSS */
+
+  /* start of home page's CSS */
+  
+  #presentation{
+    display: none;
+  padding: 6px 12px;
+
+  }
+
+  #quotes{
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 600;
+    font-family:cursive;
+    color:#2f604e;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #homeButtons{
+    padding-left: 26%;
+  }
+
+  #homeButtons a{
+    text-decoration: none;
+    
+  }
+
+  #homeButtons button{
+    background-color: #333;
+    color: white;
+    font-family: calibri;
+    font-size: 2vw;
+    border-radius: 30px;
+    width: 20vw;
+    height: 5vw;
+    border-style: none;
+    margin:15px;
+  }
+
+  #homeButtons button:hover{
+    background-color: #04AA6D;
+  }
+  /* end of home page's CSS */
+
+  /* start for customer page's CSS */
+
+  #customer{
+    background-color: rgba(227, 223, 220, 0.965);
+  }
+
+  #profile_header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color:#2f604e;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  #questionaire{
+    background-color: snow;
+    margin: 0 20%;
+    padding-bottom: 20px;
+  }
+
+  .content{
+    background-color: snow;
+    margin: 0 20%;
+    padding-bottom: 20px; 
+  }
+  .color_add{
+    height: 10px;
+    background-color: #04AA6D;
+    margin-bottom: 20px;
+    
+  }
+
+ .question{
+    margin: 20px 0px 20px 10%;
+    
+    font-size: large;
+  }
+
+  #profile_intro{
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: large;
+  }
+
+  .submit-area {
+    text-align: center;
+    margin: 20px;
+}
+
+.credits{
+  margin: 40px 0px 20px 10%;
+  font-size: smaller;
+  color:grey;
+}
+
+
+#submit {
+    padding: 10px 20px;
+    background-color:#04AA6D;
+    font-family: calibri;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+#submit:hover {
+    background-color:#2f604e;
+}
