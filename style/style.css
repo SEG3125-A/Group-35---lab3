@@ -88,7 +88,7 @@ body::after {
   background-color: #3e8e41;
 }
 
-.menuButton{
+.menuButton,.back_btn{
   background-color:#04AA6D;
   color: snow;
   padding: 16px;
@@ -103,9 +103,10 @@ body::after {
   font-size: 17px;
   padding: 8px;
   margin: 8px;
-  background-color:#04AA6D;
   cursor: pointer;
   border-radius: 9px;
+  width: 15rem;
+  font-weight: bold;
 }
 
 .back_btn:hover{
