@@ -4,243 +4,292 @@
 var products = [
 	{
 		name: "Brocoli",
+		src: "img/brocoli.jpeg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 1.99
+		price: 1.99,
+		quantity: 0
 	},
 	{
 		name: "Organic Brocoli",
+		src: "img/brocoli.jpeg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.99
+		price: 2.99,
+		quantity: 0
 	},{
 		name: "Celery",
+		src: "img/celery.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 2.20
+		price: 2.20,
+		quantity: 0
 	},
 	{
 		name: "Organic Celery",
+		src: "img/celery.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.20
+		price: 2.20,
+		quantity: 0
 	},
 	{
 		name: "Carrot",
+		src: "img/carrot.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 1.25
+		price: 1.25,
+		quantity: 0
 	},
 	{
 		name: "Organic Carrot",
+		src: "img/carrot.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.25
+		price: 2.25,
+		quantity: 0
 	},
 	{
 		name: "Banana",
+		src: "img/banana.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 0.75
+		price: 0.75,
+		quantity: 0
 	},
 	{
 		name: "Organic Banana",
+		src: "img/banana.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.25
+		price: 2.25,
+		quantity: 0
 	},
 	{
 		name: "Tofu",
+		src: "img/tofu.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 2.99
+		price: 2.99,
+		quantity: 0
 	},
 	{
 		name: "White Bread",
+		src: "img/whiteBread.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: true,
 		organic: false,
 		type: "grain",
-		price: 2.35
+		price: 2.35,
+		quantity: 0
 	},
 	{
 		name: "Milk Bread",
+		src: "img/milkBread.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: false,
 		organic: false,
 		type: "grain",
-		price: 3.50
+		price: 3.50,
+		quantity: 0
+
 	},
 	{
 		name: "Milk",
+		src: "img/milk.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: false,
 		organic: false,
 		type: "dairy",
-		price: 3.10
+		price: 3.10,
+		quantity: 0
 	},
 	{
 		name: "Greek Yogurt",
+		src: "img/greekYogurt.png",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: false,
 		organic: false,
 		type: "dairy",
-		price: 3.50
+		price: 3.50,
+		quantity: 0
 	},
 	{
 		name: "Ground Beef",
+		src: "img/groundBeef.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 5.99
+		price: 5.99,
+		quantity: 0
 	},
 	{
 		name: "Organic Ground Beef",
+		src: "img/groundBeef.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 6.99
+		price: 6.99,
+		quantity: 0
 	},
 	{
 		name: "Pork Chops",
+		src: "img/porkChops.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 4.99
+		price: 4.99,
+		quantity: 0
 	},
 	{
 		name: "Organic Pork Chops",
+		src: "img/porkChops.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 5.99
+		price: 5.99,
+		quantity: 0
 	},
 	{
 		name: "Chicken Breasts",
+		src: "img/chickenBreast.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 6.50
+		price: 6.50,
+		quantity: 0
 	},
 	{
 		name: "Organic Chicken Breasts",
+		src: "img/chickenBreast.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 7.50
+		price: 7.50,
+		quantity: 0
 		
 	},
 	{
 		name: "Salmon",
+		src: "img/salmon.jpg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 10.00
+		price: 10.00,
+		quantity: 0
 	},
 	{
 		name: "Organic Salmon",
+		src: "img/salmon.jpg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 11.00
+		price: 11.00,
+		quantity: 0
 	},
 	{
 		name: "Potato chips",
+		src: "img/potatoChips.png",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
 		lactosefree: true,
 		organic: false,
 		type: "other",
-		price: 2.40
+		price: 2.40,
+		quantity: 0
 	},
 	{
 		name: "Key lime pie",
+		src: "img/keyLimePie.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: false,
 		organic: false,
 		type: "other",
-		price: 7.75
+		price: 7.75,
+		quantity: 0
 	},
 	{
 		name: "Chocolate cake",
+		src: "img/chocolatePie.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
 		lactosefree: false,
 		organic: false,
 		type: "other",
-		price: 8.00
+		price: 8.00,
+		quantity: 0
 	}
 	
 ];
@@ -325,10 +374,10 @@ function round(num, places) {
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
-	for (let i=0; i<products.length; i+=1) {
-		if (chosenProducts.indexOf(products[i].name) > -1){
-			totalPrice += products[i].price;
-		}
+	for (let i=0; i < chosenProducts.length; i+=1) {
+		
+		totalPrice += chosenProducts[i].price * chosenProducts[i].quantity;
+		
 	}
 	totalPrice = round(totalPrice, 2)
 	return totalPrice;

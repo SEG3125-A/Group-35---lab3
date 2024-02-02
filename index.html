@@ -12,11 +12,15 @@
     onpageshow="openInfo(event,'presentation')">
     <ul class="navbar">
         <li id="logo"><a class="tablinks" onclick="openInfo(event,'presentation')">ShippyShop</a></li>
-        <div class="tab">
+        <div class="myMenu">
+            <button class="menuButton" style="font-weight:bold; ">Menu</button>
 
-            <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-            <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-            <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+            <div class="tab">
+                <a  class="tablinks" onclick="openInfo(event, 'Client')">Client</a>
+                <a  class="tablinks" onclick="openInfo(event, 'Products')">Products</a>
+                <a  class="tablinks" onclick="openInfo(event, 'Cart')">Cart</a>
+                
+            </div>
         </div>
     </ul>
 
