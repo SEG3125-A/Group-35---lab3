@@ -112,7 +112,7 @@ var products = [
 		price: 3.50
 	},
 	{
-		name: "Milk",
+		name: "Milk 2%",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: true,
