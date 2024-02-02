@@ -99,6 +99,19 @@ body::after {
   width: 7rem;
 }
 
+.back_btn {
+  font-size: 17px;
+  padding: 8px;
+  margin: 8px;
+  background-color:#04AA6D;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.back_btn:hover{
+  background-color: #3e8e41;
+}
+
 
 .menuButton:focus {
   background-color:#04AA6D;
@@ -163,6 +176,7 @@ input[type="checkbox"] {
   font-weight: bolder;
   font-size: x-large;
   text-align: center;
+  cursor: pointer;
 }
 
 #logo a:hover{
