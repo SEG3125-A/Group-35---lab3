@@ -262,7 +262,8 @@ function restrictListProducts(prods, restriction, restriction2, typerestriction)
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
 	if(slider.value >= prods[i].price){
-		if ((restriction2 == "organic") && (prods[i].organic == true)){
+		if((typerestriction == "Produce") && (prods[i].type == "produce")){
+			if ((restriction2 == "organic") && (prods[i].organic == true)){
 			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 				product_names.push(prods[i]);
 			}
@@ -278,8 +279,8 @@ function restrictListProducts(prods, restriction, restriction2, typerestriction)
 			else if (restriction == "None"){
 				product_names.push(prods[i]);
 			}
-		}
-		else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
+			}
+			else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
 			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 				product_names.push(prods[i]);
 			}
@@ -296,7 +297,7 @@ function restrictListProducts(prods, restriction, restriction2, typerestriction)
 				product_names.push(prods[i]);
 			}
 			}
-		else if (restriction2 == "no preferences"){
+			else if (restriction2 == "no preferences"){
 			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 				product_names.push(prods[i]);
 			}
@@ -312,8 +313,274 @@ function restrictListProducts(prods, restriction, restriction2, typerestriction)
 			else if (restriction == "None"){
 				product_names.push(prods[i]);
 			}
+			}
 		}
+		else if((typerestriction == "Dairy") && (prods[i].type == "dairy")){
+			if ((restriction2 == "organic") && (prods[i].organic == true)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}	
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if (restriction2 == "no preferences"){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
 		}
+		else if((typerestriction == "Protein") && (prods[i].type == "protein")){
+			if ((restriction2 == "organic") && (prods[i].organic == true)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}	
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if (restriction2 == "no preferences"){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+		}
+		else if((typerestriction == "Grain") && (prods[i].type == "grain")){
+			if ((restriction2 == "organic") && (prods[i].organic == true)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}	
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if (restriction2 == "no preferences"){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+		}
+		else if((typerestriction == "Other") && (prods[i].type == "other")){
+			if ((restriction2 == "organic") && (prods[i].organic == true)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}	
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if (restriction2 == "no preferences"){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+		}
+		else if (typerestriction == "All"){
+			if ((restriction2 == "organic") && (prods[i].organic == true)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if ((restriction2 == "non-organic") && (prods[i].organic == false)){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}	
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+			else if (restriction2 == "no preferences"){
+			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "LactoseFree") && (prods[i].lactosefree == true)){
+				product_names.push(prods[i]);
+			}
+			else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+				product_names.push(prods[i]);
+			}
+			else if (restriction == "None"){
+				product_names.push(prods[i]);
+			}
+			}
+		}
+	}
 	}
 
 	// sorting the products by price
