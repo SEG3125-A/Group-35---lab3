@@ -162,7 +162,8 @@ function populateListProductChoices(slct1, slct2, slct3) {
 		var card_qty = document.createElement("span");
 		var card_add = document.createElement("button");
 		
-		// applying styling to the product card
+		// applying styling to the product card element
+		//product card styling
 		productCard.className = "p_card";
 		productCard.style.width = "25%";
 		productCard.style.marginTop = "3%";
@@ -171,23 +172,39 @@ function populateListProductChoices(slct1, slct2, slct3) {
 		
 		
 		
-
+		//product image styling
 		card_img.style.height = "55%";
 		card_img.style.width = "45%";
 		card_img.style.margin = "0% 25%";
 
+		// product name and price styling
 		card_name.style.textAlign = "center";
 		card_price.style.textAlign = "center";
 
+		//product quantity container styling
 		card_adder.style.padding= "0px 20px";
+
+		// minus button styling
 		card_minus.style.borderRadius="20%";
-		card_minus.style.marginLeft= "10%";
+		card_minus.style.marginLeft= "27%";
 		card_minus.style.width= "19px";
 		card_minus.style.display = "inline-block";
-		card_add.style.borderRadius="25%";
+		card_minus.style.backgroundColor = "#04AA6D";
+		card_minus.style.border = "none";
+		card_minus.style.fontWeight = "bolder";
+		card_minus.style.color = "white";
+
+		// add button styling
+		card_add.style.borderRadius="20%";
 		card_add.style.width= "20px";
 		card_add.style.marginRight= "10%"
+		card_add.style.backgroundColor = "#04AA6D";
+		card_add.style.border = "none";
+		card_add.style.fontWeight = "bolder";
+		card_add.style.color = "white";
 		card_add.style.display = "inline-block";
+
+		// quantity text styling
 		card_qty.style.margin = "0% 2%";
 		card_qty.style.display = "inline-block";
 		productCard.value = productName;
@@ -216,6 +233,7 @@ function populateListProductChoices(slct1, slct2, slct3) {
 		productCard.appendChild(card_adder);
 
 		
+		//adding eventlisteners on button to reduce or increase quantity
 		card_minus.addEventListener("click", function() {decrease(this);});
 		card_add.addEventListener("click", function() {increase(this);});
 
@@ -227,7 +245,7 @@ function populateListProductChoices(slct1, slct2, slct3) {
 	
 // This function is called when the "Add selected items to cart" button in clicked
 // The purpose is to build the HTML to be display divs of the product card selected
-// We build a paragraph to contain the list of selected items, and the total price
+// We build a div to contain the list of selected items, and the total price
 
 function selectedItems(){
 	
@@ -250,12 +268,16 @@ function selectedItems(){
 	para.style.width = "70%"
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].value.quantity > 0) {
+
+			// element that will replace the lastchild of the productcard div
 			var cart_qty = document.createElement("p");
 			var new_quantity =  ele[i].value.quantity;
 			cart_qty.appendChild(document.createTextNode("Qty: " + new_quantity));
 			cart_qty.style.padding = "0% 20%";
 
 			var buffer = ele[i].cloneNode(true);
+
+			// replacement of the lastchild of the product card (div "card_adder")
 			buffer.removeChild(buffer.lastElementChild);
 			buffer.appendChild(cart_qty);
 			para.appendChild(buffer);
@@ -288,5 +310,5 @@ function selectedItems(){
 const populateList = (slct1,slct2,slct3) => {
 	populateListProductChoices(slct1,slct2,slct3);
 	let btnText = document.getElementById('submit');
-	btnText.value = 'Preferances saved!';
+	btnText.value = 'Preferences saved!';
 }
