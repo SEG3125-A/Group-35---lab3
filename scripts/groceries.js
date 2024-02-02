@@ -39,7 +39,7 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.20
+		price: 3.20
 	},
 	{
 		name: "Carrot",
