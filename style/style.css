@@ -45,27 +45,23 @@ body::after {
 }
 
 .tab {
-  overflow: hidden;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  float: right;
-  margin: 0 auto;
-  gap: 1rem;
-  /* border: 2px solid pink; */
+  
+  display: none;
+  position: absolute;
+  background-color: darkslategrey;
+  min-width: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
 }
 
+
 /* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: right;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.tab a {
   color: white;
-  padding: 14px 16px;
-  transition: 0.3s;
-  background-color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  overflow-x: hidden;
   font-size: 1rem;
   border-radius: 4px;
   width: 7rem;
@@ -79,9 +75,37 @@ body::after {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab a:hover {
   background-color:#157753;
+  
 }
+
+.myMenu:hover .tab{
+  display: block;
+  
+}
+.myMenu:hover .menuButton{
+  background-color: #3e8e41;
+}
+
+.menuButton{
+  background-color:#04AA6D;
+  color: snow;
+  padding: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.menuButton:hover, .menuButton:focus {
+  background-color:#04AA6D;
+}
+.myMenu{
+  position: relative;
+  float: right;
+}
+
 
 #addCart {
   margin: 30px 0px 0px 0px;
@@ -100,16 +124,33 @@ body::after {
   background-color:#2f604e;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color:#04AA6D;
-}
+
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
   border-top: none;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 95%;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Calibri;
+    /* background-color: #f4f4f4; */   
+    background-image: url(wallpaper1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
   /* border: 2px solid red; */
   width: 50rem;
   border-radius: 6px;
@@ -124,6 +165,34 @@ input[type="checkbox"] {
 
 
 /* Code for X inspired by https://www.w3schools.com/css/css_navbar.asp  */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    background-color: black;
+    background-blend-mode: color;
+    height : 52px  }
+  
+  li {
+    float: right;
+    
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 52px;
+  }
+  /* logo styling */
+  #logo{
+    float: left;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    text-align: center;
+  }
 .navbar {
   list-style-type: none;
   overflow-x: hidden;
@@ -175,7 +244,7 @@ input[type="checkbox"] {
 
 #logo a {
   color:#45d4a0;
-}
+} 
 
   /* end of navbar's CSS */
 
@@ -258,9 +327,11 @@ input[type="checkbox"] {
 
   .content{
     background-color: snow;
-    margin: 0 20%;
+    margin: 0 5%;
     padding-bottom: 20px; 
   }
+
+  
   .color_add{
     height: 10px;
     background-color: #04AA6D;
@@ -269,7 +340,7 @@ input[type="checkbox"] {
   }
 
  .question{
-    margin: 20px 0px 20px 10%;
+    margin: 20px 5%;
     
     font-size: large;
   }

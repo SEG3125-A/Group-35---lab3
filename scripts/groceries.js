@@ -4,6 +4,7 @@
 var products = [
 	{
 		name: "Brocoli",
+		src: "img/brocoli.jpeg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -12,10 +13,12 @@ var products = [
 		type: "produce",
 		price: 1.99,
 		sale: true,
-		src:"./style/wallpaper1.jpg"
+		src:"./style/wallpaper1.jpg",
+		quantity: 0
 	},
 	{
 		name: "Organic Brocoli",
+		src: "img/brocoli.jpeg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -23,10 +26,10 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.99,
-		sale: true,
-		src:"./style/wallpaper1.jpg"
+		quantity: 0
 	},{
 		name: "Celery",
+		src: "img/celery.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -34,11 +37,11 @@ var products = [
 		organic: false,
 		type: "produce",
 		price: 2.20,
-		sale: true,
-		src:"./style/wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Organic Celery",
+		src: "img/celery.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -46,11 +49,11 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.20,
-		sale: true,
-		src:"./style/wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Carrot",
+		src: "img/carrot.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -58,11 +61,11 @@ var products = [
 		organic: false,
 		type: "produce",
 		price: 1.25,
-		sale:true,
-		src:"./style/wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Organic Carrot",
+		src: "img/carrot.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -70,11 +73,11 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.25,
-		sale:true,
-		src:"./style/wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Banana",
+		src: "img/banana.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -82,11 +85,11 @@ var products = [
 		organic: false,
 		type: "produce",
 		price: 0.75,
-		sale:false,
-		src:"./style/wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Organic Banana",
+		src: "img/banana.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -94,11 +97,11 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.25,
-		sale:false,
-		src:"./style/wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Tofu",
+		src: "img/tofu.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: false,
@@ -106,11 +109,11 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 2.99,
-		sale:false,
-		src:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "White Bread",
+		src: "img/whiteBread.jpg",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: false,
@@ -118,11 +121,11 @@ var products = [
 		organic: false,
 		type: "grain",
 		price: 2.35,
-		sale:false,
-		src:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Milk Bread",
+		src: "img/milkBread.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
@@ -130,11 +133,12 @@ var products = [
 		organic: false,
 		type: "grain",
 		price: 3.50,
-		sale:false,
-		src:"./wallpaper1.jpg"
+		quantity: 0
+
 	},
 	{
 		name: "Milk",
+		src: "img/milk.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: true,
@@ -142,11 +146,11 @@ var products = [
 		organic: false,
 		type: "dairy",
 		price: 3.10,
-		sale:false,
-		src:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Greek Yogurt",
+		src: "img/greekYogurt.png",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: true,
@@ -154,11 +158,11 @@ var products = [
 		organic: false,
 		type: "dairy",
 		price: 3.50,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Ground Beef",
+		src: "img/groundBeef.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -166,11 +170,11 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 5.99,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Organic Ground Beef",
+		src: "img/groundBeef.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -178,11 +182,11 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 6.99,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Pork Chops",
+		src: "img/porkChops.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -190,11 +194,11 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 4.99,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Organic Pork Chops",
+		src: "img/porkChops.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -202,11 +206,11 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 5.99,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Chicken Breasts",
+		src: "img/chickenBreast.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -214,11 +218,11 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 6.50,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Organic Chicken Breasts",
+		src: "img/chickenBreast.jpeg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -226,12 +230,12 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 7.50,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 		
 	},
 	{
 		name: "Salmon",
+		src: "img/salmon.jpg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -239,11 +243,11 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 10.00,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Organic Salmon",
+		src: "img/salmon.jpg",
 		vegan: false,
 		vegetarian: false,
 		glutenFree: true,
@@ -251,11 +255,11 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 11.00,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Potato chips",
+		src: "img/potatoChips.png",
 		vegan: true,
 		vegetarian: true,
 		glutenFree: true,
@@ -263,11 +267,11 @@ var products = [
 		organic: false,
 		type: "other",
 		price: 2.40,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Key lime pie",
+		src: "img/keyLimePie.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
@@ -275,11 +279,11 @@ var products = [
 		organic: false,
 		type: "other",
 		price: 7.75,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	},
 	{
 		name: "Chocolate cake",
+		src: "img/chocolatePie.jpg",
 		vegan: false,
 		vegetarian: true,
 		glutenFree: false,
@@ -287,8 +291,7 @@ var products = [
 		organic: false,
 		type: "other",
 		price: 8.00,
-		sale:false,
-		scr:"./wallpaper1.jpg"
+		quantity: 0
 	}
 	
 ];
@@ -373,10 +376,10 @@ function round(num, places) {
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
 	totalPrice = 0;
-	for (let i=0; i<products.length; i+=1) {
-		if (chosenProducts.indexOf(products[i].name) > -1){
-			totalPrice += products[i].price;
-		}
+	for (let i=0; i < chosenProducts.length; i+=1) {
+		
+		totalPrice += chosenProducts[i].price * chosenProducts[i].quantity;
+		
 	}
 	totalPrice = round(totalPrice, 2)
 	return totalPrice;
