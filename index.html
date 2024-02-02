@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShippyShop</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -10,15 +12,22 @@
 
 <body id="home" onload="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)"
     onpageshow="openInfo(event,'presentation')">
-    <ul class="navbar">
-        <li id="logo"><a class="tablinks" onclick="openInfo(event,'presentation')">ShippyShop</a></li>
-        <div class="tab">
-
-            <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-            <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-            <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+    <div class="navbar">
+        <div id="logo">
+            <a class="tablinks" onclick="openInfo(event,'presentation')">ShippyShop</a>
         </div>
-    </ul>
+        <div id="nav" class="tab">
+            <button class="tablinks" onclick="openInfo(event, 'Client')">
+                <span aria-hidden="true">01</span>Client
+            </button>
+            <button class="tablinks" onclick="openInfo(event, 'Products')">
+                <span aria-hidden="true">02</span>Products
+            </button>
+            <button class="tablinks" onclick="openInfo(event, 'Cart')">
+                <span aria-hidden="true">03</span>Cart
+            </button>
+        </div>
+    </div>
 
 
     <!-- Tab links, each one with an onclick event associated with it -->
@@ -34,20 +43,23 @@
                 <button onclick="openInfo(event, 'Products')">Shop now</button>
             </a>
 
+            <a>
+                <button onclick="openInfo(event, 'ProductsSale')">On sale</button>
+            </a>
         </div>
-
-        <p class="credits">Website designed by: Lolita I., David M., Leon L.</p>
+        <!-- <p class="credits">Website designed by: Lolita I., David M., Leon L.</p> -->
     </div>
     <!-- Tab content -->
     <div id="Client" class="tabcontent">
         <div id="profile_header">Profile </div>
 
-        <form action="" id="questionaire">
+        <form title="form" action="" id="questionaire">
             <div class="color_add"></div>
             <div id="profile_intro"> Fill in your profile to have refined product suggestions</div>
+            
             <div class="question">
-                <label for="q1">Select the diet that applies to you:</label>
-                <select id="dietSelect" name="dietSelect">
+                <p>Select the diet that applies to you:</p>
+                <select id="dietSelect" name="dietSelect" title="dietSelect">
                     <option value="None">None</option>
                     <option value="Vegetarian">Vegetarian</option>
                     <option value="Vegan">Vegan</option>
@@ -57,8 +69,8 @@
             </div>
 
             <div class="question">
-                <label for="q2">Product preferences:</label>
-                <select name="q2" id="q2">
+                <p>Product preferences:</p>
+                <select name="q2" id="q2" title="organic_preferances">
                     <option value="no preferences">No preferences</option>
                     <option value="organic">Organic products</option>
                     <option value="non-organic">Non-organic products</option>
@@ -67,13 +79,13 @@
 
 
             <div class="submit-area">
-                <input type="button" onclick="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)"
+                <input type="button" onclick="populateList(dietSelect.id, 'displayProduct', q2.id)"
                     value="SAVE" id="submit">
             </div>
-            <p class="credits">Website designed by: Lolita I., David M., Leon L.</p>
+        </form>
+            <!-- <p class="credits">Website designed by: Lolita I., David M., Leon L.</p> -->
     </div>
 
-    </div>
     <div id="Products" class="tabcontent">
         <div id="profile_header">Your Available Products</div>
 
@@ -81,16 +93,22 @@
             <div class="color_add"></div>
             <div id="profile_intro">Items shown are based on your dietary restrictions</div>
             <div class="question">
-                <label for="display">Select the products </label>
+                <p>Select the products</p>
                 <br>
                 <div id="displayProduct"></div>
                 <button id="addCart" type="button" class="block" onclick="selectedItems()">
                     Add selected items to cart.
                 </button>
             </div>
-            <p class="credits">Website designed by: Lolita I., David M., Leon L.</p>
+            <!-- <p class="credits">Website designed by: Lolita I., David M., Leon L.</p> -->
         </div>
 
+    </div>
+
+    <div id='ProductsSale' class="tabcontent">
+        <h2>Items on sale !</h2>
+        <div id="slider">
+        </div>
     </div>
 
     <div id="Cart" class="tabcontent">
@@ -102,11 +120,16 @@
             <div class="question">
                 <div id="displayCart"></div>
             </div>
-
-            <p class="credits">Website designed by: Lolita I., David M., Leon L.</p>
+            <!-- <p class="credits">Website designed by: Lolita I., David M., Leon L.</p> -->
         </div>
-        <script src="scripts/groceries.js"></script>
-        <script src="scripts/main.js"></script>
+    </div>
+    <!-- footer -->
+    <div class="credits">
+        Made with &#x1F90D; by Lolita I., David M., Leon L, Amani L
+    </div>
+
+    <script src="scripts/groceries.js"></script>
+    <script src="scripts/main.js"></script>
 
 </body>
 

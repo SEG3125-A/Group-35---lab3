@@ -10,7 +10,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 1.99
+		price: 1.99,
+		sale: true,
+		src:"./style/wallpaper1.jpg"
 	},
 	{
 		name: "Organic Brocoli",
@@ -20,7 +22,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.99
+		price: 2.99,
+		sale: true,
+		src:"./style/wallpaper1.jpg"
 	},{
 		name: "Celery",
 		vegan: true,
@@ -29,7 +33,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 2.20
+		price: 2.20,
+		sale: true,
+		src:"./style/wallpaper1.jpg"
 	},
 	{
 		name: "Organic Celery",
@@ -39,7 +45,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.20
+		price: 2.20,
+		sale: true,
+		src:"./style/wallpaper1.jpg"
 	},
 	{
 		name: "Carrot",
@@ -49,7 +57,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 1.25
+		price: 1.25,
+		sale:true,
+		src:"./style/wallpaper1.jpg"
 	},
 	{
 		name: "Organic Carrot",
@@ -59,7 +69,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.25
+		price: 2.25,
+		sale:true,
+		src:"./style/wallpaper1.jpg"
 	},
 	{
 		name: "Banana",
@@ -69,7 +81,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "produce",
-		price: 0.75
+		price: 0.75,
+		sale:false,
+		src:"./style/wallpaper1.jpg"
 	},
 	{
 		name: "Organic Banana",
@@ -79,7 +93,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "produce",
-		price: 2.25
+		price: 2.25,
+		sale:false,
+		src:"./style/wallpaper1.jpg"
 	},
 	{
 		name: "Tofu",
@@ -89,7 +105,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 2.99
+		price: 2.99,
+		sale:false,
+		src:"./wallpaper1.jpg"
 	},
 	{
 		name: "White Bread",
@@ -99,7 +117,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "grain",
-		price: 2.35
+		price: 2.35,
+		sale:false,
+		src:"./wallpaper1.jpg"
 	},
 	{
 		name: "Milk Bread",
@@ -109,7 +129,9 @@ var products = [
 		lactosefree: false,
 		organic: false,
 		type: "grain",
-		price: 3.50
+		price: 3.50,
+		sale:false,
+		src:"./wallpaper1.jpg"
 	},
 	{
 		name: "Milk",
@@ -119,7 +141,9 @@ var products = [
 		lactosefree: false,
 		organic: false,
 		type: "dairy",
-		price: 3.10
+		price: 3.10,
+		sale:false,
+		src:"./wallpaper1.jpg"
 	},
 	{
 		name: "Greek Yogurt",
@@ -129,7 +153,9 @@ var products = [
 		lactosefree: false,
 		organic: false,
 		type: "dairy",
-		price: 3.50
+		price: 3.50,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Ground Beef",
@@ -139,7 +165,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 5.99
+		price: 5.99,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Organic Ground Beef",
@@ -149,7 +177,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 6.99
+		price: 6.99,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Pork Chops",
@@ -159,7 +189,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 4.99
+		price: 4.99,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Organic Pork Chops",
@@ -169,7 +201,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 5.99
+		price: 5.99,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Chicken Breasts",
@@ -179,7 +213,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 6.50
+		price: 6.50,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Organic Chicken Breasts",
@@ -189,7 +225,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 7.50
+		price: 7.50,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 		
 	},
 	{
@@ -200,7 +238,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "protein",
-		price: 10.00
+		price: 10.00,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Organic Salmon",
@@ -210,7 +250,9 @@ var products = [
 		lactosefree: true,
 		organic: true,
 		type: "protein",
-		price: 11.00
+		price: 11.00,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Potato chips",
@@ -220,7 +262,9 @@ var products = [
 		lactosefree: true,
 		organic: false,
 		type: "other",
-		price: 2.40
+		price: 2.40,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Key lime pie",
@@ -230,7 +274,9 @@ var products = [
 		lactosefree: false,
 		organic: false,
 		type: "other",
-		price: 7.75
+		price: 7.75,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	},
 	{
 		name: "Chocolate cake",
@@ -240,7 +286,9 @@ var products = [
 		lactosefree: false,
 		organic: false,
 		type: "other",
-		price: 8.00
+		price: 8.00,
+		sale:false,
+		scr:"./wallpaper1.jpg"
 	}
 	
 ];

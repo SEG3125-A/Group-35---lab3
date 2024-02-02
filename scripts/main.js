@@ -20,8 +20,69 @@ function openInfo(evt, tabName) {
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.className += " active";
 
+	let spans = document.getElementsByTagName("span");
+	if (tabName != "presentation" && tabName != "ProductsSale"){
+		for (i = 0;i<spans.length;i++){
+			spans[i].style.display = "inline";
+		}
+	}
+
+	if (tabName == "ProductsSale" ){
+		buildSlider();
+	}
+
+
 }
 
+
+const buildSlider = ()=>{
+	onSaleProducts = [];
+	for (i = 0;i<products.length;i++){
+		if (products[i].sale == true){
+			onSaleProducts.push(products[i]);
+		}
+	}
+
+	let slider = document.getElementById('slider');
+
+	// Now I have the products that are on sale
+
+	for (i = 0;i<onSaleProducts.length;i++) {
+        let product = onSaleProducts[i]
+        // create a div for each item
+        var div = document.createElement("div");
+        div.className = "item";
+        // console.log("beh here",products[0])
+        slider.appendChild(div);
+
+        var divImage = document.createElement("div");
+        divImage.className = "imageDiv";
+        div.appendChild(divImage);
+
+        var image = document.createElement("img");
+        image.src = product.src;
+        divImage.appendChild(image);
+
+        var divInfo = document.createElement("div");
+        divInfo.className = "infoDiv";
+        div.appendChild(divInfo);
+
+        var heading = document.createElement("h3");
+        heading.className = "name";
+        heading.innerHTML = product.name;
+        divInfo.appendChild(heading);
+
+        var heading = document.createElement("h3");
+        heading.className = "price";
+        heading.innerHTML = `${product.price} $`;
+        divInfo.appendChild(heading);
+    }
+
+
+	// slider with different inner divs constructed
+
+	
+}
 
 	
 // generate a checkbox list from a list of products
@@ -70,9 +131,12 @@ function selectedItems(){
 	
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];
+	var notCheckedItems = [];
 	
 	var c = document.getElementById('displayCart');
 	c.innerHTML = "";
+
+	let add_text = document.getElementById("addCart");
 	
 	// build list of selected item
 	var para = document.createElement("P");
@@ -84,12 +148,29 @@ function selectedItems(){
 			para.appendChild(document.createTextNode(ele[i].value));
 			para.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
+		} else {
+			notCheckedItems.push(ele[i]);
 		}
+	}
+
+	if (notCheckedItems.length == ele.length) {
+		add_text.innerHTML = "You haven't added any products to your cart"
+	} else {
+		add_text.innerHTML = "Items were added successfully!"
 	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
 	para.appendChild(document.createElement("br"));
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
+
+
 		
+}
+
+
+const populateList = (slct1,slct2,slct3) => {
+	populateListProductChoices(slct1,slct2,slct3);
+	let btnText = document.getElementById('submit');
+	btnText.value = 'Preferances saved!';
 }
