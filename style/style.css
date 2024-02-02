@@ -19,7 +19,8 @@ body {
   --bg-image: url(wallpaper1.jpg);
   --bg-image-opacity:.8;
   isolation: isolate;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visiblegit ;
 }
 
 
