@@ -13,19 +13,19 @@
 <body id="home" onload="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)"
     onpageshow="openInfo(event,'presentation')">
     <ul class="navbar">
-        <li id="logo"><a class="tablinks" onclick="openInfo(event,'presentation')">ShippyShop</a></li>
+        <li id="logo">
+            <a class="tablinks" onclick="openInfo(event,'presentation')">ShippyShop</a>
+        </li>
         <div class="myMenu">
             <button class="menuButton" style="font-weight:bold; ">Menu</button>
-
             <div class="tab">
                 <a  class="tablinks" onclick="openInfo(event, 'Client')">Client</a>
                 <a  class="tablinks" onclick="openInfo(event, 'Products')">Products</a>
                 <a  class="tablinks" onclick="openInfo(event, 'Cart')">Cart</a>
-                
             </div>
         </div>
-    </div>
-
+    </ul>
+    
 
     <!-- Tab links, each one with an onclick event associated with it -->
     <!-- home page design -->

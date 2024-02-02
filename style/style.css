@@ -5,25 +5,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
 
 body {
   font-family: Calibri;
-  /* background-color: #f4f4f4;    */
-  /* background-image: url(wallpaper1.jpg); */
-  /* background-size: cover; */
-  /* I dont have this one */
-  /* background-attachment: fixed; */
-  /* background-repeat: no-repeat; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   --bg-image: url(wallpaper1.jpg);
-  --bg-image-opacity:.7;
+  --bg-image-opacity:.8;
   isolation: isolate;
+  overflow: hidden;
 }
 
 
@@ -45,13 +41,16 @@ body::after {
 }
 
 .tab {
-  
-  display: none;
   position: absolute;
   background-color: darkslategrey;
-  min-width: 30px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  gap: 1rem;
+  border-radius: 4px;
 }
 
 
@@ -61,12 +60,13 @@ body::after {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  overflow-x: hidden;
   font-size: 1rem;
   border-radius: 4px;
-  width: 7rem;
   align-items: center;
+  cursor: pointer;
+
 }
+
 
 .tab button [aria-hidden="true"]{
   font-weight: bold;
@@ -76,8 +76,7 @@ body::after {
 
 /* Change background color of buttons on hover */
 .tab a:hover {
-  background-color:#157753;
-  
+  background-color:#157753; 
 }
 
 .myMenu:hover .tab{
@@ -95,10 +94,12 @@ body::after {
   font-size: 17px;
   border: none;
   cursor: pointer;
+  border-radius: 9px;
+  width: 7rem;
 }
 
 
-.menuButton:hover, .menuButton:focus {
+.menuButton:focus {
   background-color:#04AA6D;
 }
 .myMenu{
@@ -131,30 +132,9 @@ body::after {
   display: none;
   padding: 6px 12px;
   border-top: none;
-} 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 95%;
-    font-family: sans-serif;
-}
-
-body {
-    font-family: Calibri;
-    /* background-color: #f4f4f4; */   
-    background-image: url(wallpaper1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-
-}
-  /* border: 2px solid red;
   width: 50rem;
   border-radius: 6px;
-}  */
+} 
 
 input[type="checkbox"] {
   width: 1.5em;
@@ -162,49 +142,76 @@ input[type="checkbox"] {
   accent-color: green;
 }
 
-
-
-/* Code for X inspired by https://www.w3schools.com/css/css_navbar.asp  */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; 
-    background-color: black;
-    background-blend-mode: color;
-    height : 52px  }
-  
-  li {
-    float: right;
-    
-  }
-  
-  li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    height: 52px;
-  }
-  /* logo styling */
-  #logo{
-    float: left;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: x-large;
-    text-align: center;
-  }
 .navbar {
   list-style-type: none;
-  overflow-x: hidden;
-  background-color: black;
-  /* margin: 0 auto; */
-  /* text-align: center; */
-  font-size: 2em;
   padding: 1rem;
   width: 100%;
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-between; */
+  justify-content: space-between;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em
+}
+
+/* logo styling */
+#logo{
+  float: left;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+  text-align: center;
+}
+
+#logo a:hover{
+  background-color: #333;
+}
+
+#logo a{
+  color:#45d4a0;
+}
+
+.tab {
+  display: none;
+  position: absolute;
+  background-color: darkslategrey;
+  /* min-width: 30px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 7rem;
+}
+
+/* Change background color of buttons on hover */
+.tab a:hover {
+  background-color:#157753;
+
+}
+
+.myMenu:hover .tab{
+  display: block;
+
+}
+/* .myMenu:hover .menuButton{
+  background-color: #3e8e41;
+}
+
+.menuButton{
+  background-color:#04AA6D;
+  color: snow;
+  padding: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.menuButton:hover, .menuButton:focus {
+  background-color:#04AA6D;
+} */
+.myMenu{
+  position: relative;
+  float: right;
 }
 
 .credits {
@@ -219,33 +226,6 @@ ul {
   margin-top: auto;
 
 }
-  
-#logo {
-  float: left;
-  font-family: sans-serif;
-  font-weight:bolder;
-  cursor: pointer;
-  /* text-align: center; */
-
-}
-  
-#logo a {
-  display: block;
-  color: white;
-  /* text-align: center; */
-  padding: .25rem;
-  text-decoration: none;
-}
-
-#logo a:hover{
-  background-color: #333;
-  border-radius: 6px;
-}
-
-#logo a {
-  color:#45d4a0;
-} 
-
   /* end of navbar's CSS */
 
   /* start of home page's CSS */
@@ -371,11 +351,6 @@ ul {
     line-height: 2rem;
   }
 
-/* .credits{
-  margin: 40px 0px 20px 10%;
-  font-size: smaller;
-  color:grey;
-} */
 
 
 #submit {

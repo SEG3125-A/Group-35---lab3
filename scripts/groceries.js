@@ -13,7 +13,6 @@ var products = [
 		type: "produce",
 		price: 1.99,
 		sale: true,
-		src:"./style/wallpaper1.jpg",
 		quantity: 0
 	},
 	{
@@ -26,7 +25,8 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.99,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},{
 		name: "Celery",
 		src: "img/celery.jpg",
@@ -37,7 +37,8 @@ var products = [
 		organic: false,
 		type: "produce",
 		price: 2.20,
-		quantity: 0
+		quantity: 0,
+		sale: true
 	},
 	{
 		name: "Organic Celery",
@@ -49,7 +50,8 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.20,
-		quantity: 0
+		quantity: 0,
+		sale: true
 	},
 	{
 		name: "Carrot",
@@ -61,7 +63,8 @@ var products = [
 		organic: false,
 		type: "produce",
 		price: 1.25,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Organic Carrot",
@@ -73,7 +76,8 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.25,
-		quantity: 0
+		quantity: 0,
+		sale: true
 	},
 	{
 		name: "Banana",
@@ -85,7 +89,8 @@ var products = [
 		organic: false,
 		type: "produce",
 		price: 0.75,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Organic Banana",
@@ -97,7 +102,8 @@ var products = [
 		organic: true,
 		type: "produce",
 		price: 2.25,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Tofu",
@@ -109,7 +115,8 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 2.99,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "White Bread",
@@ -121,7 +128,8 @@ var products = [
 		organic: false,
 		type: "grain",
 		price: 2.35,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Milk Bread",
@@ -133,8 +141,8 @@ var products = [
 		organic: false,
 		type: "grain",
 		price: 3.50,
-		quantity: 0
-
+		quantity: 0,
+		sale: true
 	},
 	{
 		name: "Milk",
@@ -146,7 +154,8 @@ var products = [
 		organic: false,
 		type: "dairy",
 		price: 3.10,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Greek Yogurt",
@@ -158,7 +167,8 @@ var products = [
 		organic: false,
 		type: "dairy",
 		price: 3.50,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Ground Beef",
@@ -170,7 +180,8 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 5.99,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Organic Ground Beef",
@@ -182,7 +193,8 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 6.99,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Pork Chops",
@@ -194,7 +206,8 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 4.99,
-		quantity: 0
+		quantity: 0,
+		sale: true
 	},
 	{
 		name: "Organic Pork Chops",
@@ -206,7 +219,8 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 5.99,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Chicken Breasts",
@@ -218,7 +232,8 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 6.50,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Organic Chicken Breasts",
@@ -230,7 +245,8 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 7.50,
-		quantity: 0
+		quantity: 0,
+		sale: false
 		
 	},
 	{
@@ -243,7 +259,8 @@ var products = [
 		organic: false,
 		type: "protein",
 		price: 10.00,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Organic Salmon",
@@ -255,7 +272,8 @@ var products = [
 		organic: true,
 		type: "protein",
 		price: 11.00,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Potato chips",
@@ -267,7 +285,8 @@ var products = [
 		organic: false,
 		type: "other",
 		price: 2.40,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Key lime pie",
@@ -279,7 +298,8 @@ var products = [
 		organic: false,
 		type: "other",
 		price: 7.75,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	},
 	{
 		name: "Chocolate cake",
@@ -291,7 +311,8 @@ var products = [
 		organic: false,
 		type: "other",
 		price: 8.00,
-		quantity: 0
+		quantity: 0,
+		sale: false
 	}
 	
 ];
