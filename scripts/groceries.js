@@ -245,14 +245,23 @@ var products = [
 	
 ];
 	
+// slider functions that update the value and display
+var slider = document.getElementById("priceslider");
+var output = document.getElementById("money");
+output.innerHTML = slider.value;
 
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  priceslider.value = this.value;
+}
 
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restriction, restriction2) {
+function restrictListProducts(prods, restriction, restriction2, typerestriction) {
 	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
+	if(slider.value >= prods[i].price){
 		if ((restriction2 == "organic") && (prods[i].organic == true)){
 			if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 				product_names.push(prods[i]);
@@ -304,7 +313,7 @@ function restrictListProducts(prods, restriction, restriction2) {
 				product_names.push(prods[i]);
 			}
 		}
-		
+		}
 	}
 
 	// sorting the products by price

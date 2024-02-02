@@ -8,7 +8,7 @@
 
 <!-- Tab links, each one with an onclick event associated with it -->
 
-<body id="home" onload="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)"
+<body id="home" onload="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id, q3.id)"
     onpageshow="openInfo(event,'presentation')">
     <ul class="navbar">
         <li id="logo"><a class="tablinks" onclick="openInfo(event,'presentation')">ShippyShop</a></li>
@@ -67,7 +67,7 @@
 
 
             <div class="submit-area">
-                <input type="button" onclick="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id)"
+                <input type="button" onclick="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id, q3.id)"
                     value="SAVE" id="submit">
             </div>
             <p class="credits">Website designed by: Lolita I., David M., Leon L.</p>
@@ -75,11 +75,43 @@
 
     </div>
     <div id="Products" class="tabcontent">
+        <!-- side menu stuff -->
+    	<div class="sidenav">
+    	<div id="sidebar_intro">Filter Options</div>
+    	
+    	<!-- price slider -->
+    	<div class="slidecontainer">
+    		<div id="profile_intro">Price Range</div>
+    		<div id="sidetext"> Range can be set to up to $20 </div>
+  			<input type="range" min="0" max="20" value="20" class="priceslider" id="priceslider" name="priceslider">
+  			<div id="sidetext">Value: $<span id="money"></span></div>
+  			</div>
+  			
+  		<!-- product type -->
+  		<div id="profile_intro">Product Type</div>
+		 <div class="question">
+		 		<label for="q3">Type: </label>
+                <select id="q3" name="q3">
+                	<option value="All">All</option>
+                    <option value="Produce">Produce</option>
+                    <option value="Protein">Protein</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Grain">Grain</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+		
+		<!-- save filter changes -->
+		<div class="submit-area">
+                <input type="button" onclick="populateListProductChoices(dietSelect.id, 'displayProduct', q2.id, q3.id)"
+                    value="APPLY" id="submit">
+            </div>
+    	</div>
+    	
         <div id="profile_header">Your Available Products</div>
-
         <div class="content">
             <div class="color_add"></div>
-            <div id="profile_intro">Items shown are based on your dietary restrictions</div>
+            <div id="profile_intro">Items shown are based on your dietary restrictions</div>		
             <div class="question">
                 <label for="display">Select the products </label>
                 <br>
