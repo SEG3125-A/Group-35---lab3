@@ -308,8 +308,8 @@ function selectedItems(){
 }
 
 
-const populateList = (slct1,slct2,slct3) => {
-	populateListProductChoices(slct1,slct2,slct3);
+const populateList = (slct1,slct2,slct3,slct4) => {
+	populateListProductChoices(slct1,slct2,slct3,slct4);
 	let btnText = document.getElementById('submit');
 	btnText.value = 'Preferences saved!';
 }
