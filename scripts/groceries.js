@@ -316,7 +316,16 @@ var products = [
 	}
 	
 ];
-	
+
+// slider functions that update the value and display
+var slider = document.getElementById("priceslider");
+var output = document.getElementById("money");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  priceslider.value = this.value;
+}
 
 
 // given restrictions provided, make a reduced list of products
