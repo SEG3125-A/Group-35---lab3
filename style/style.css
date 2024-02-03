@@ -335,6 +335,19 @@ input[type="checkbox"] {
     
   }
 
+  #sidebar_intro{
+  	text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color:#2f604e;
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  
+  #sidetext{
+  	text-align: center;
+  }
+
  .question{
     margin: 20px 5%;
     
@@ -596,4 +609,38 @@ input[type="checkbox"] {
   #crumbs ul li a:after {
       right: -30px;
   }
+}
+
+/* slider styles */
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.priceslider {
+  margin-left: 15px;
+  width: 85%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.sidenav {
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  left: 40px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
 }
